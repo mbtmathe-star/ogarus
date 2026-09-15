@@ -979,7 +979,20 @@
           display: none;
         }
         .hero-side-badges {
-          display: none;
+          position: static;
+          flex-direction: row;
+          flex-wrap: wrap;
+          justify-content: flex-start;
+          margin-top: 20px;
+        }
+        .hero-side-badges span {
+          width: 100%;
+          text-align: left;
+          max-width: none;
+        }
+        .hero-side-badges img.side-badge {
+          height: 64px;
+          padding: 8px 12px;
         }
         .wrap {
           padding-left: 22px;
