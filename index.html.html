@@ -644,6 +644,9 @@
         gap: 14px;
         margin-top: 50px;
       }
+      .service-list.service-list-4 {
+        grid-template-columns: repeat(4, 1fr);
+      }
       .service-item {
         padding: 30px;
         background: #fff;
@@ -1038,6 +1041,9 @@
         .service-list {
           grid-template-columns: 1fr 1fr;
         }
+        .service-list.service-list-4 {
+          grid-template-columns: 1fr 1fr;
+        }
         .process-steps {
           grid-template-columns: 1fr 1fr;
         }
@@ -1167,6 +1173,7 @@
       <nav>
         <a href="#/">Home</a><a href="#/about">About</a
         ><a href="#/construction">Construction</a
+        ><a href="#/maintenance">Maintenance</a
         ><a href="#/development">Developments</a><a href="#/projects">Projects</a
         ><a href="#/investment">Investments</a><a href="#/partners">Partners</a>
       </nav>
@@ -1204,6 +1211,42 @@
           <span>CONSTRUCTION</span><i></i><span>PROPERTY DEVELOPMENT</span
           ><i></i><span>PROPERTY INVESTMENT</span><i></i
           ><span>REAL PROJECTS</span>
+        </section>
+        <section class="content-section wrap">
+          <div class="service-heading">
+            <span class="eyebrow">What we do</span>
+            <h2>Full-service building<br />and property care.</h2>
+          </div>
+          <div class="service-list service-list-4">
+            <a class="service-item" href="#/construction"
+              ><i>01</i><h3>Building Contractors</h3>
+              <p>
+                General building contracting for new work, additions and
+                structural projects.
+              </p>
+              <b>Explore construction →</b></a
+            ><a class="service-item" href="#/maintenance"
+              ><i>02</i><h3>Maintenance</h3>
+              <p>
+                Ongoing property maintenance, including electrical and
+                plumbing repairs.
+              </p>
+              <b>Explore maintenance →</b></a
+            ><a class="service-item" href="#/construction"
+              ><i>03</i><h3>Renovation</h3>
+              <p>
+                Full home renovations, alterations and extensions delivered
+                with care.
+              </p>
+              <b>Explore construction →</b></a
+            ><a class="service-item" href="#/construction"
+              ><i>04</i><h3>Demolition & Removals</h3>
+              <p>
+                Safe demolition, site clearance and rubble removal.
+              </p>
+              <b>Explore construction →</b></a
+            >
+          </div>
         </section>
         <section class="intro wrap">
           <div>
@@ -1440,8 +1483,9 @@
           <span class="eyebrow light">Construction division</span>
           <h1>Your project.<br />Our building expertise.</h1>
           <p>
-            Ogarus is appointed as the construction partner to build, renovate,
-            repair or improve a property owned or commissioned by the client.
+            As building contractors, Ogarus is appointed to build, renovate,
+            repair or improve a property owned or commissioned by the client —
+            including renovation work and demolition & removals.
           </p>
         </section>
         <section class="content-section wrap content-grid">
@@ -1459,6 +1503,9 @@
             </p>
             <a class="btn" href="#/contact" data-enquiry="Construction project" style="margin-top: 35px"
               >Discuss a construction project ↗</a
+            ><br />
+            <a class="text-link" href="#/maintenance" style="margin-top: 20px; display: inline-block"
+              >Looking for property maintenance instead? →</a
             >
           </div>
           <div class="content-image">
@@ -1498,6 +1545,80 @@
               <b>04</b>
               <h3>Handover</h3>
               <p>Close out carefully and deliver with confidence.</p>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="spa-page" data-page="maintenance">
+        <section
+          class="page-hero"
+          style="--bg: var(--img-bathroom-shower)"
+        >
+          <span class="eyebrow light">Maintenance division</span>
+          <h1>Keeping your property<br />running smoothly.</h1>
+          <p>
+            Ongoing repairs and property upkeep — including electrical and
+            plumbing — so small issues never become big ones.
+          </p>
+        </section>
+        <section class="content-section wrap content-grid">
+          <div>
+            <span class="eyebrow">Always on call</span>
+            <h2>Practical upkeep,<br />handled properly.</h2>
+            <p>
+              From a tripped circuit to a leaking geyser, our maintenance team
+              handles the electrical, plumbing and general repair work that
+              keeps a property running — without the scale of a full
+              construction project.
+            </p>
+            <p>
+              This division is for existing properties that need reliable,
+              qualified attention on an ongoing or once-off basis.
+            </p>
+            <a class="btn" href="#/contact" data-enquiry="Maintenance request" style="margin-top: 35px"
+              >Request maintenance ↗</a
+            ><br />
+            <a class="text-link" href="#/construction" style="margin-top: 20px; display: inline-block"
+              >Planning a larger build or renovation? →</a
+            >
+          </div>
+          <div class="content-image">
+            <img
+              src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" data-project-image="bathroom-shower"
+              alt="Ogarus maintenance team completing plumbing work"
+            />
+          </div>
+        </section>
+        <section class="content-section wrap">
+          <div class="service-heading">
+            <span class="eyebrow">Services offered</span>
+            <h2>Electrical, plumbing<br />and everything in between.</h2>
+          </div>
+          <div class="service-list" id="maintenance-service-list"></div>
+        </section>
+        <section class="process">
+          <span class="eyebrow">How maintenance works</span>
+          <h2>Simple to request, quick to resolve.</h2>
+          <div class="process-steps">
+            <div>
+              <b>01</b>
+              <h3>Report</h3>
+              <p>Tell us what needs attention and how urgent it is.</p>
+            </div>
+            <div>
+              <b>02</b>
+              <h3>Assess</h3>
+              <p>We confirm the scope, materials and timing required.</p>
+            </div>
+            <div>
+              <b>03</b>
+              <h3>Repair</h3>
+              <p>Qualified tradespeople complete the work safely and neatly.</p>
+            </div>
+            <div>
+              <b>04</b>
+              <h3>Follow-up</h3>
+              <p>We check the job is done right, with no loose ends.</p>
             </div>
           </div>
         </section>
@@ -2123,6 +2244,7 @@
       <div>
         <b>Explore</b><a href="#/about">About</a
         ><a href="#/construction">Construction</a
+        ><a href="#/maintenance">Maintenance</a
         ><a href="#/development">Developments</a><a href="#/projects">Projects</a
         ><a href="#/investment">Investments</a>
       </div>
@@ -2144,6 +2266,7 @@
         "home",
         "about",
         "construction",
+        "maintenance",
         "development",
         "projects",
         "investment",
@@ -2190,6 +2313,10 @@
           "Construction for clients who already have land, plans or a defined project.",
         ],
         [
+          "Demolition & Removals",
+          "Safe demolition, site clearance and rubble removal.",
+        ],
+        [
           "Kitchen & Bathrooms",
           "Complete remodels with plumbing, electrical, tiling and cabinetry.",
         ],
@@ -2214,9 +2341,10 @@
           "Kitchen and bedroom cupboards with modern finishes.",
         ],
       ];
-      const list = document.querySelector("#service-list");
-      if (list)
-        list.innerHTML = all
+      function renderServiceList(selector, services) {
+        const el = document.querySelector(selector);
+        if (!el) return;
+        el.innerHTML = services
           .map(
             (s, i) =>
               '<a class="service-item" href="#/contact" data-enquiry="' +
@@ -2230,6 +2358,36 @@
               "</p><b>Request this service →</b></a>",
           )
           .join("");
+      }
+      renderServiceList("#service-list", all);
+
+      const maintenanceServices = [
+        [
+          "Electrical Repairs",
+          "Re-wires, fault-finding, plug points and lighting upgrades.",
+        ],
+        [
+          "Plumbing & Geysers",
+          "Leak repairs, pipe replacement, geyser installation and servicing.",
+        ],
+        [
+          "General Repairs",
+          "Day-to-day fixes, patch-ups and property upkeep.",
+        ],
+        [
+          "Emergency Call-outs",
+          "Fast response for urgent electrical or plumbing issues.",
+        ],
+        [
+          "Painting & Touch-ups",
+          "Interior and exterior maintenance painting.",
+        ],
+        [
+          "Roofing & Waterproofing",
+          "Leak repairs, gutter maintenance and re-sealing.",
+        ],
+      ];
+      renderServiceList("#maintenance-service-list", maintenanceServices);
 
       const enquiryModal = document.querySelector("#enquiry-modal");
       const enquiryForm = enquiryModal.querySelector(".enquiry-form");
